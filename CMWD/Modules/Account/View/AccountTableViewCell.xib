@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="AccountTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XxX-M0-r3J">
+                        <rect key="frame" x="16" y="11" width="36" height="38"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="我的投资" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tD5-ZR-O6k">
+                        <rect key="frame" x="60" y="19" width="79" height="21"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="未评测" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UIP-y8-Qi4">
+                        <rect key="frame" x="250" y="21" width="43" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="right_home" translatesAutoresizingMaskIntoConstraints="NO" id="tEf-im-Jeg">
+                        <rect key="frame" x="303" y="24" width="7" height="12"/>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4q9-Yy-ioi">
+                        <rect key="frame" x="0.0" y="59" width="320" height="0.5"/>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="7hE-MS-rEE"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="4q9-Yy-ioi" secondAttribute="trailing" id="PE6-Yz-5e5"/>
+                    <constraint firstItem="4q9-Yy-ioi" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="WVQ-Tb-uhW"/>
+                    <constraint firstItem="tEf-im-Jeg" firstAttribute="centerY" secondItem="UIP-y8-Qi4" secondAttribute="centerY" id="Xh0-zD-CYQ"/>
+                    <constraint firstAttribute="trailing" secondItem="tEf-im-Jeg" secondAttribute="trailing" constant="10" id="tTj-92-DDG"/>
+                    <constraint firstAttribute="bottom" secondItem="4q9-Yy-ioi" secondAttribute="bottom" id="xDF-97-KBq"/>
+                    <constraint firstItem="tEf-im-Jeg" firstAttribute="leading" secondItem="UIP-y8-Qi4" secondAttribute="trailing" constant="10" id="yAe-Zs-ys6"/>
+                </constraints>
+            </tableViewCellContentView>
+            <constraints>
+                <constraint firstItem="tEf-im-Jeg" firstAttribute="centerY" secondItem="KGk-i7-Jjw" secondAttribute="centerY" id="Dll-sy-XcJ"/>
+            </constraints>
+            <connections>
+                <outlet property="detailLab" destination="UIP-y8-Qi4" id="s4s-ur-igs"/>
+                <outlet property="headImageView" destination="XxX-M0-r3J" id="br2-NP-GfB"/>
+                <outlet property="titlelab" destination="tD5-ZR-O6k" id="okK-eL-GRI"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="right_home" width="7" height="12"/>
+    </resources>
+</document>
